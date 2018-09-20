@@ -152,7 +152,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .mvm { font-size: 3.5rem; line-height: 3rem;}
 .arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px;}
 .arena_banner, 
-.kiosk_banner { padding-left: 0; position: absolute; bottom:0} 
+.kiosk_banner { padding-left: 0;} 
 .arena_text, 
 .kiosk_text { color: #333; font-family: var(--Linotte); font-weight: 800;  } 
 .arena_text { padding-left: 75px; padding-top: 75px; height: 380px; padding-left: 65px;max-width: 480px; position: absolute}
