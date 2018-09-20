@@ -61,7 +61,7 @@ html, body { min-height: 100vh; margin: 0; padding: 0; }
 .mvm { font-family: 'Avenir-Black'; font-size: 50px; padding-bottom: 2rem; color: var(--gray); line-height: 1.7rem; margin-top: 2rem; } 
 .container-fluid { margin: 0; padding: 0; overflow: hidden; } 
 b { font-weight: 900; } 
-.bg_orange { background-color: var(--orange); position: absolute }
+.bg_orange { background-color: var(--orange); position: absolute; height: 640px }
 
 
 /* SECTION 1 */
