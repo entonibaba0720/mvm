@@ -58,11 +58,12 @@
 * { box-sizing: border-box; } 
 body { position: relative; } 
 html, body { min-height: 100vh; margin: 0; padding: 0; } 
-.mvm { font-family: 'Avenir-Black'; font-size: 50px; padding-bottom: 2rem; color: var(--gray); line-height: 1.7rem; margin-top: 2rem; } 
+.mvm { font-family: 'Avenir-Black'; font-size: 50px; color: var(--gray); line-height: 1.7rem;  } 
 .container-fluid { margin: 0; padding: 0; overflow: hidden; } 
 b { font-weight: 900; } 
-.bg_orange { background-color: var(--orange);}
-
+.bg_orange { background-color: var(--orange); height: 640px;}
+.max-height { max-height: 100%}
+.margin-top-25 {margin-top: 25px}
 
 /* SECTION 1 */
 
@@ -99,7 +100,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .responsive_menu ul { list-style-type: none; padding-left: 0; width: 100%; }
 .responsive_menu ul li { font-size: 2.1em; opacity: 0; }
 .responsive_menu ul li a { font-family: var(--Nunito), sans-serif; color: #fff; font-weight: 200; }
-.vertical_align { display: flex; flex-direction: column; align-items: center; }
+.vertical_align { display: flex; align-items: center; }
 .glyphicon-remove:hover { cursor: pointer; }
 
 
@@ -148,14 +149,14 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 /* SECTION 2 */
 
-.arena { display: flex; justify-content: center; flex-direction: column; padding: 20px; margin: 0 30px;}
+.arena { padding: 25px; height: 640px; }
 .mvm { font-size: 3.5rem; line-height: 3rem;}
 .arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px;}
 .arena_banner, 
-.kiosk_banner { height: auto; padding-left: 0; position: relative; bottom:0} 
+.kiosk_banner {  height: 640px;  padding-left: 0; position: relative;} 
 .arena_text, 
 .kiosk_text { color: #333; font-family: var(--Linotte); font-weight: 800;  } 
-.arena_text { padding-left: 75px; padding-top: 75px; height: 380px; padding-left: 65px;max-width: 480px; position: absolute}
+.arena_text {top:0;padding-left: 75px;padding-top: 95px;height: 380px; padding-left: 100px;max-width: 480px; position: absolute;}
 .arena_text h1 { font-size: 3.5rem; margin-bottom: 1rem; }
 .arena_text h2 { font-size: 2rem; margin-bottom: 1.5rem; line-height: 35px} 
 .arena_text p, 
@@ -163,7 +164,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .button_arena, 
 .button_kiosk { margin-top: 2rem; margin-left: 1.5rem; } 
 .center-block {display: inline;}
-
+.orange {height: 100%;}
 
 /* SECTION 3 */
 
@@ -294,43 +295,45 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.hero_text {font-size:28px; letter-spacing:1.5px; line-height: 35px;padding-top: 250px }
 
 	 /*SECTION 2 */
-	.mvm {font-size: 2rem; padding: 30px 10px; height: auto; line-height: 2rem}
-	.arena, .kiosk {padding: 0 30px; max-height: 100%}
-	.arena_banner {height: 100%;}
-	.arena p {font-size: 14px; line-height: 1.5rem}
-	.arena_text {position: absolute; top: 0; padding-left: 25px; padding-top: 25px; }
+	.mvm {font-size: 2rem; padding: 10px; line-height: 2rem}
+	.arena, .kiosk {padding: 0 15px; height: auto;}
+	.arena_banner {height: 100%; padding-right: 0;}
+	.arena p {font-size: 14px; line-height: 1.1rem; padding: 0 10px}
+	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
-	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 1.5rem; max-width: 250px}
-	.arena_text p { font-size: 1rem; line-height: 1.3rem; max-width: 250px }
+	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
+	.arena_text p { font-size: 1rem; max-width: 250px; line-height: 2rem; }
  }
 
 /* Mobile   (xs) */
 @media(min-width:401px) and (max-width:767px){
 	/*SECTION 2 */
-	.arena_banner, .kiosk_banner, .orange, .kiosk, .arena {  width: 100%; } 
+	.arena_banner, .kiosk_banner, .orange, .kiosk, .arena {width: 100%;height: 100%;} 
 	.arena_text {position: absolute; top: 0; padding-left: 50px; padding-top: 70px; }
 	.arena_text h1 { font-size: 3rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.9rem; margin-bottom: 1rem; line-height: 35px; max-width: 500px}
 	.arena_text p { font-size: 1rem }
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
-	.mvm {font-size: 2rem; padding: 30px 10px; height: auto; line-height: 2rem}
+	.mvm {padding: 30px 20px;}
 	.arena { padding: 20px; max-height: 100%}
-	.arena p {font-size: 14px; line-height: 1.2rem}
+	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
  }
 
 /* Tablet   (sm) */
 @media(min-width:768px) and (max-width: 991px){
 	/*SECTION 2 */
-	.arena_text {width: 300px;padding-top: 30px;padding-left: 50px;}
+	.section_2 {max-height: 100%}
+	.arena_text {width: 300px;padding-left: 50px;padding-top: 250px;}
 	.kiosk p, 
 	.arena p { line-height: 1rem; }  
 	.arena_text h1 { font-size: 2.3rem; }  
 	.arena_text p,
 	.kiosk_text p { font-size: 1rem; line-height: 1.4rem; } 
 	.center-block {display: flex; justify-content: center;}
-	.mvm { margin-top: 0; padding-top: 0; line-height: 3rem;}
+	.mvm {margin-top: 0;padding-top: 0;}
 	.arena { padding-top: 20px; max-height: 100%}
 	.arena p {font-size: 14px; line-height: 1.2rem}
+	.arena_banner { padding-top: 200px}
 }
 
 /* Laptop   (md) */
@@ -338,17 +341,18 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	/*SECTION 2 */
 	.arena_text { width: 400px; padding-top: 50px}
 	.arena_text p {line-height: 1.5rem}
+	.arena_banner {padding-top: 190px;}
 }
 
 /* Desktop  (lg) */
 @media(min-width:993px) and (max-width: 1200px){
 	/*SECTION 2 */
-	.arena_text {padding-top: 50px; padding-top: 260px; padding-left: 30px}
+	.arena_text {padding-top: 230px;padding-left: 30px;}
 }
  
 @media (min-width: 1900px) {
 	/*SECTION 2 */
-	.arena_text {padding-top: 100px; padding-left: 200px; max-width: 800px}
+	.arena_text {padding-top: 60px;padding-left: 250px;max-width: 700px;}
 	.arena_text h1 { font-size: 4.5rem; margin-bottom: 2rem; }
 	.arena_text h2 { font-size: 3rem; margin-bottom: 1rem; line-height: 50px; }
 	.arena_text p { font-size: 1.8rem; line-height: 50px;}
