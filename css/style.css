@@ -61,7 +61,7 @@ html, body { min-height: 100vh; margin: 0; padding: 0; }
 .mvm { font-family: 'Avenir-Black'; font-size: 50px; color: var(--gray); line-height: 1.7rem;  } 
 .container-fluid { margin: 0; padding: 0; overflow: hidden; } 
 b { font-weight: 900; } 
-.bg_orange { background-color: var(--orange); height: 640px;}
+.bg_orange {background-color: var(--orange);height: 640px;position: relative; height: 100%}
 .max-height { max-height: 100%}
 .margin-top-25 {margin-top: 25px}
 
@@ -105,8 +105,8 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 
 /* SCROLL */
-.scrolled { margin-top: 0; background-color: rgba(0, 0, 0, 0.7); padding-bottom: 5px} 
-.smaller { height: 70px; margin-left: 50px; margin-right: 20px;}
+.scrolled { margin-top: 0; background-color: rgba(0, 0, 0, 0.7); } 
+.smaller { height: 50px; margin-left: 50px; margin-right: 20px;}
 
 
 /* XS */
@@ -149,22 +149,28 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 /* SECTION 2 */
 
-.arena { padding: 25px; height: 640px; }
+.arena, .kiosk { padding: 25px; height: 640px; }
 .mvm { font-size: 3.5rem; line-height: 3rem;}
-.arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px;}
+.arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px; padding-bottom: 2rem; }
 .arena_banner, 
-.kiosk_banner {height: 640px; padding-left: 0; position: relative;} 
+.kiosk_banner { width: 640px; padding-left: 0;} 
 .arena_text, 
 .kiosk_text { color: #333; font-family: var(--Linotte); font-weight: 800;  } 
-.arena_text {top:0;padding-left: 75px;padding-top: 95px;height: 380px; padding-left: 100px;max-width: 480px; position: absolute;}
+.arena_text { top:0;padding-left: 75px;padding-top: 60px;height: 380px; padding-left: 100px;max-width: 480px; position: absolute;}
 .arena_text h1 { font-size: 3.5rem; margin-bottom: 1rem; }
 .arena_text h2 { font-size: 2rem; margin-bottom: 1.5rem; line-height: 35px} 
 .arena_text p, 
-.kiosk_text p { color: #333 !important; font-family: var(--Linotte); line-height: 2.2rem; font-weight: 800; } 
+.kiosk_text p { color: #333 !important; font-family: var(--Linotte); line-height: 2rem; font-weight: 800; } 
+.kiosk_text {position: absolute;top: 0;margin-top: 35px; padding: 10px 30px;font-size: 1.5rem;width: 500px;}
 .button_arena, 
 .button_kiosk { margin-top: 2rem; margin-left: 1.5rem; } 
 .center-block {display: inline;}
 .orange {height: 100%;}
+
+
+
+
+
 
 /* SECTION 3 */
 
@@ -295,45 +301,51 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.hero_text {font-size:28px; letter-spacing:1.5px; line-height: 35px;padding-top: 250px }
 
 	 /*SECTION 2 */
-	.mvm {font-size: 2rem; padding: 10px; line-height: 2rem}
+	.mvm {font-size: 2rem;line-height: 2rem}
 	.arena, .kiosk {padding: 0 15px; height: auto;}
 	.arena_banner {height: 100%; padding-right: 0;}
-	.arena p {font-size: 14px; line-height: 1.1rem; padding: 0 10px}
+	.arena p {font-size: 14px; padding: 0 10px}
 	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
-	.arena_text p { font-size: 1rem; max-width: 250px; line-height: 2rem; }
+	.arena_text p, .kiosk_text p { font-size: 1rem; max-width: 250px; line-height: 1.2rem; }
+	.kiosk_text {position: absolute;top: 0;margin-top: 35px;padding: 10px;font-size: 1.5rem;width: 270px;}
+	
  }
 
 /* Mobile   (xs) */
 @media(min-width:401px) and (max-width:767px){
 	/*SECTION 2 */
-	.arena_banner, .kiosk_banner, .orange, .kiosk, .arena {width: 100%;height: 100%;} 
-	.arena_text {position: absolute; top: 0; padding-left: 50px; padding-top: 70px; }
+	.arena_banner, .kiosk_banner, .orange, .kiosk, .arena {width: 100%} 
+	.arena_text {position: absolute; top: 0; padding-left: 50px;  }
 	.arena_text h1 { font-size: 3rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.9rem; margin-bottom: 1rem; line-height: 35px; max-width: 500px}
 	.arena_text p { font-size: 1rem }
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
-	.mvm {padding: 30px 20px;}
+	.mvm {padding: 30px 20px 10px 20px;font-size: 2rem;line-height: 2rem;}
 	.arena { padding: 20px; max-height: 100%}
 	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.kiosk_text {width: 350px;}
  }
 
 /* Tablet   (sm) */
 @media(min-width:768px) and (max-width: 991px){
 	/*SECTION 2 */
 	.section_2 {max-height: 100%}
-	.arena_text {width: 300px;padding-left: 50px;padding-top: 250px;}
+	.arena_text {width: 300px;padding-left: 50px;padding-top: 220px;}
 	.kiosk p, 
 	.arena p { line-height: 1rem; }  
 	.arena_text h1 { font-size: 2.3rem; }  
 	.arena_text p,
-	.kiosk_text p { font-size: 1rem; line-height: 1.4rem; } 
+	.kiosk_text p {font-size: 1rem;line-height: 2rem;width: 300px;padding-top: 180px} 
+	.kiosk_text p {padding-left: 0;}
+	.arena_text p {padding-top: 0}
 	.center-block {display: flex; justify-content: center;}
 	.mvm {margin-top: 0;padding-top: 0;}
 	.arena { padding-top: 20px; max-height: 100%}
 	.arena p {font-size: 14px; line-height: 1.2rem}
-	.arena_banner { padding-top: 200px}
+	.arena_banner { padding-top:180px}
+	
 }
 
 /* Laptop   (md) */
@@ -341,19 +353,24 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	/*SECTION 2 */
 	.arena_text { width: 400px; padding-top: 50px}
 	.arena_text p {line-height: 1.5rem}
-	.arena_banner {padding-top: 190px;}
+	.arena_banner {padding-top: 32px;}
 }
 
 /* Desktop  (lg) */
 @media(min-width:993px) and (max-width: 1200px){
 	/*SECTION 2 */
-	.arena_text {padding-top: 230px;padding-left: 30px;}
+	.arena_text {padding-top: 100px;padding-left: 75px;}
 }
  
-@media (min-width: 1900px) {
+@media (min-width: 1920px) {
 	/*SECTION 2 */
-	.arena_text {padding-top: 60px;padding-left: 250px;max-width: 700px;}
+	.arena_text {max-width: 700px;}
 	.arena_text h1 { font-size: 4.5rem; margin-bottom: 2rem; }
 	.arena_text h2 { font-size: 3rem; margin-bottom: 1rem; line-height: 50px; }
 	.arena_text p { font-size: 1.8rem; line-height: 50px;}
+	.orange{position: relative;}
+	.kiosk_text {margin-top: 25px;position: absolute;padding-left: 80px;max-width: 450px;}
+	.kiosk_text p {max-width: 500px;padding-top: 40px; position: relative; line-height: 2.2rem; padding-left: 20px;}
+	
+    
 }
