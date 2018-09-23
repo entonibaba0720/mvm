@@ -161,7 +161,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .arena_text h2 { font-size: 2rem; margin-bottom: 1.5rem; line-height: 35px} 
 .arena_text p, 
 .kiosk_text p { color: #333 !important; font-family: var(--Linotte); line-height: 2rem; font-weight: 800; } 
-.kiosk_text {position: absolute;top: 0;margin-top: 35px; padding: 10px 30px;font-size: 1.5rem;width: 500px;}
+.kiosk_text {position: absolute;top: 0;margin-top: 35px; padding: 40px 60px;font-size: 1.5rem;width: 500px;}
 .button_arena, 
 .button_kiosk { margin-top: 2rem; margin-left: 1.5rem; } 
 .center-block {display: inline;}
@@ -309,8 +309,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
 	.arena_text p, .kiosk_text p { font-size: 1rem; max-width: 250px; line-height: 1.2rem; }
-	.kiosk_text {position: absolute;top: 0;margin-top: 35px;padding: 10px;font-size: 1.5rem;width: 270px;}
-	
+	.kiosk_text {position: absolute;top: 0;margin-top: 20px;padding-top: 0; padding-left: 20px; font-size: 1.5rem;width: 270px;}
  }
 
 /* Mobile   (xs) */
@@ -325,7 +324,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.mvm {padding: 30px 20px 10px 20px;font-size: 2rem;line-height: 2rem;}
 	.arena { padding: 20px; max-height: 100%}
 	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
-	.kiosk_text {width: 350px;}
+	.kiosk_text {max-width: 400px;}
  }
 
 /* Tablet   (sm) */
@@ -362,7 +361,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text {padding-top: 100px;padding-left: 75px;}
 }
  
-@media (min-width: 1920px) {
+@media (min-width: 1919px) {
 	/*SECTION 2 */
 	.arena_text {max-width: 700px;}
 	.arena_text h1 { font-size: 4.5rem; margin-bottom: 2rem; }
@@ -370,7 +369,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text p { font-size: 1.8rem; line-height: 50px;}
 	.orange{position: relative;}
 	.kiosk_text {margin-top: 25px;position: absolute;padding-left: 80px;max-width: 450px;}
-	.kiosk_text p {max-width: 500px;padding-top: 40px; position: relative; line-height: 2.2rem; padding-left: 20px;}
+	.kiosk_text p {width: 450px;line-height: 2.4rem; }
 	
     
 }
