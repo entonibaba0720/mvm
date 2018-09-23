@@ -89,7 +89,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .underline a:hover, .where a:hover { color: var(--orange) } 
 .where { margin-top: 1.5rem; } 
 .button_change { display: none; } 
-.oval { position: absolute;  } 
+.oval { position: absolute; top: 80%;left:48% } 
 
 
 /* RESPONSIVE MENU */
@@ -111,7 +111,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 /* XS */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
  .hero_text {padding-left: 30px}
  .scrolled { padding-bottom: 50px;}
  .smaller { margin-left: 0; margin-right: 0; }
@@ -150,7 +150,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 /* SECTION 2 */
 
 .arena, .kiosk { padding: 25px; height: 640px; }
-.mvm { font-size: 3.5rem; line-height: 3rem;}
+.mvm { font-size: 3.6rem; line-height: 4rem; max-width: 500px}
 .arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px; padding-bottom: 2rem; }
 .arena_banner, 
 .kiosk_banner { width: 640px; padding-left: 0;} 
@@ -304,7 +304,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.mvm {font-size: 2rem;line-height: 2rem}
 	.arena, .kiosk {padding: 0 15px; height: auto;}
 	.arena_banner {height: 100%; padding-right: 0;}
-	.arena p {font-size: 14px; padding: 0 10px}
+
 	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
@@ -322,9 +322,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text p { font-size: 1rem }
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {padding: 30px 20px 10px 20px;font-size: 2rem;line-height: 2rem;}
-	.arena { padding: 20px; max-height: 100%}
+	.arena { padding: 20px; }
 	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
-	.kiosk_text {max-width: 420px; padding-top: 0; padding-left: 20px}
+	.kiosk_text {max-width: 420px; padding-top: 50px; padding-left: 40px}
  }
 
 /* Tablet   (sm) */
@@ -332,15 +332,16 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	/*SECTION 2 */
 	.section_2 {max-height: 100%}
 	.arena_text {width: 300px;padding-left: 50px;padding-top: 220px;}
+	.kiosk_text {padding-left: 30px}
 	.kiosk p, 
 	.arena p { line-height: 1rem; }  
-	.arena_text h1 { font-size: 2.3rem; }  
+	.arena_text h1 { font-size: 2.8rem; }  
 	.arena_text p,
-	.kiosk_text p {font-size: 1rem;line-height: 2rem;width: 300px;padding-top: 180px} 
+	.kiosk_text p {font-size: 1rem;line-height: 2rem;width: 300px;padding-top: 150px} 
 	.kiosk_text p {padding-left: 0;}
 	.arena_text p {padding-top: 0}
 	.center-block {display: flex; justify-content: center;}
-	.mvm {margin-top: 0;padding-top: 0;}
+	.mvm {margin-top: 0;padding-top: 0; font-size: 2.5rem; line-height: 2.5rem}
 	.arena { padding-top: 20px; max-height: 100%}
 	.arena p {font-size: 14px; line-height: 1.2rem}
 	.arena_banner { padding-top:180px}
@@ -353,13 +354,11 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text { width: 400px; padding-top: 50px}
 	.arena_text p {line-height: 1.5rem}
 	.arena_banner {padding-top: 32px;}
+	.arena_text {padding-top: 100px;padding-left: 75px;}
+	
 }
 
-/* Desktop  (lg) */
-@media(min-width:993px) and (max-width: 1200px){
-	/*SECTION 2 */
-	.arena_text {padding-top: 100px;padding-left: 75px;}
-}
+
  
 @media (min-width: 1919px) {
 	/*SECTION 2 */
