@@ -51,7 +51,11 @@
 	src: url('../fonts/Avenir-Black.ttf');
 	
 }
- 
+
+@font-face {
+		font-family: Avenir-Roman;
+		src: url('../fonts/Avenir-Roman.ttf');
+}
 
 
 /* GENERAL */
@@ -174,40 +178,34 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 /* SECTION 3 */
 
-.section_3 {height: 100vh; background-color: #f2f2f2; position: relative;}
-.card { height: 100vh; background-image: url(../images/1cardwb.png); background-size: contain; background-repeat: no-repeat; background-position-x: -20vw; background-position-y: 30vh; overflow: hidden; animation: slideinCard 2s;}
-#mvm_cashcard {font-family: var(--Avenir_Light), sans-serif; font-weight: 800; font-size: 2rem; color: var(--black); margin-bottom: 1.5rem; } 
-.big_card_logo { top: 40px; left: 20px; display: block; } 
-.big_card_logo_img { height: 150px; position: absolute; left: 40px; top: 40px} 
-#cashcard_big_card { font-family: var(--Avenir_Light); position: relative; top: 10%; left: 50%; width: 40%; height: 40%; } 
-.card_p { display: flex; } 
+.section_3 {height: 980px; background-color: #f2f2f2; position: relative; }
+.big_card {background-image: url(../images/1cardwb.png); background-repeat: no-repeat;  background-size: 60%; background-position-x:-30%; background-position-y: 30%;  animation: slideinCard 1s;} 
+.big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
+#cashcard_big_card { font-family: Avenir-Roman; display:flex; justify-content: center; flex-direction: column; height: 100vh; } 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
 #cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; max-width: 80%; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
-.cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; } 
-.align_center { padding-top: 150px }
-.mvm_header { max-width: 800px}
+.cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px} 
+
 @keyframes slideinCard {
 	from {
-	  margin-right: 100%;
+	  background-position-x: -100%;
 	}
-  
 	to {
-	  margin-right: 0%;
-	 
+		background-position-x: -30%;
 	}
   }
+
 
 /*XS */
 
 @media screen and (max-width: 768px){
  .big_card_logo_img { height: 70px }
- .big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; height: 100vh; }  
+ .big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; height: 100vh; } 
  #cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; } 
  .big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; } 
  .cashcard_big_card_p { line-height: 1rem; } 
  .mvm { margin-top: 2rem; } 
  }
-
 
 /* SECTION 4 */
 
@@ -325,7 +323,11 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.mvm {padding: 30px 20px 10px 20px;font-size: 2rem;line-height: 2rem;}
 	.arena { padding: 20px; }
 	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
-	.kiosk_text {max-width: 420px; padding-top: 110px; padding-left: 40px}
+	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px}
+
+	/*SECTION 3*/
+	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
+	.big_card_logo_img {height: 100px;}
  }
 
 /* Tablet   (sm) */
@@ -346,6 +348,10 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena { padding-top: 20px; max-height: 100%}
 	.arena p {font-size: 14px; line-height: 1.2rem}
 	.arena_banner { padding-top:180px}
+
+	/*SECTION 3*/
+	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
+	.big_card_logo_img {height: 100px;}
 	
 }
 
@@ -357,6 +363,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_banner {padding-top: 32px;}
 	.arena_text {padding-top: 100px;padding-left: 75px;}
 	.oval_button {margin-top: 20px}
+
+	/*SECTION 3*/
+	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 }
 
 
@@ -370,6 +379,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.orange{position: relative;}
 	.kiosk_text {margin-top: 25px;position: absolute;padding-left: 80px;max-width: 450px;}
 	.kiosk_text p {width: 450px;line-height: 2.4rem; }
+	 
 	
     
 }
