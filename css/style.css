@@ -260,11 +260,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 .footer_container { margin-bottom: 2rem; } 
 
 
-/* XS */
 
-@media screen and (max-width: 768px){
- 
- }
 
 
 
@@ -297,6 +293,14 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
 	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
 	.cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0; font-size: 2rem;width: 300px;} 
+		/*FOOTER*/
+		footer { height: 100%; } 
+		.footer_1 p { display: none; } 
+		.footer_1 p { display: none; } 
+		.footer_2, .footer_3, .footer_4  { justify-content: left; margin-left: 10px} 
+		footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
+		.footer_logo {margin-left: 20px}
+		.footer_2, .footer_3 { width: 80%; } 
 }
 
 
