@@ -185,7 +185,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
 #cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; max-width: 80%; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
 .cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
-.cashcard_mvm.mvm { margin-bottom: 2rem}
+.cashcard_mvm.mvm { margin-bottom: 2rem; font-size: 3.5rem}
  @keyframes slideinCard {
 	from {
 	  background-position-x: 100%;
@@ -195,12 +195,6 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 	}
   } 
 
-
-/*XS */
-
- @media screen and (max-width: 767px){
-
- } 
 
 /* SECTION 4 */
 
@@ -312,7 +306,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	 .big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; height: 100vh; } 
 	 #cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px } 
 	 .big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
-	 .cashcard_big_card_p { line-height: 1rem; padding: 0 15px; font-size: 1rem } 
+	 .cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
 	 .cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0} 
 }
 
@@ -335,7 +329,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px;}
 	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px } 
-	.cashcard_big_card_p { line-height: 1rem; padding: 0 30px; font-size: 1rem }
+	.cashcard_big_card_p { line-height: 1.5rem; padding: 0 30px; font-size: 1rem }
+	.cashcard_mvm.mvm { font-size: 2rem;margin-top: 2rem; padding-left: 15px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; height: 100vh; }  
  }
 
@@ -363,12 +358,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px;}
-	
 	#cashcard_big_card { height: 700px } 
-	
-	.cashcard_big_card_p { line-height: 1rem; } 
-	.mvm { margin-top: 2rem; } 
-	
+	.cashcard_big_card_p { line-height: 1.5rem } 
+	.cashcard_mvm.mvm { font-size: 2.3rem;margin-top: 2rem}
 }
 
 /* Laptop   (md) */
@@ -383,6 +375,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
+	.cashcard_mvm.mvm { font-size: 3.5rem;line-height: 3.5rem}
 }
 
 
