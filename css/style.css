@@ -179,28 +179,28 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 /* SECTION 3 */
 
 .section_3 {height: 980px; background-color: #f2f2f2; position: relative; }
-.big_card {background-image: url(../images/1cardwb.png); background-repeat: no-repeat;  background-size: 60%; background-position-x:-30%; background-position-y: 30%;  animation: slideinCard 1s;} 
+.big_card {background-image: url(../images/big_card.jpg); background-size: cover; background-repeat: no-repeat; background-position-x: 40%;  animation: slideinCard 1s; } 
 .big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
-#cashcard_big_card { font-family: Avenir-Roman; display:flex; justify-content: center; flex-direction: column; height: 100vh; } 
+#cashcard_big_card { font-family: Avenir-Roman; display:flex; justify-content: center; flex-direction: column; height: 960px} 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
 #cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; max-width: 80%; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
-.cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px} 
+.cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
 
-@keyframes slideinCard {
+ @keyframes slideinCard {
 	from {
-	  background-position-x: -100%;
+	  background-position-x: 100%;
 	}
 	to {
-		background-position-x: -30%;
+		background-position-x: 40%;
 	}
-  }
+  } 
 
 
 /*XS */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
  .big_card_logo_img { height: 70px }
- .big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; height: 100vh; } 
+ .big_card { background-image: url(../images/1cardhorizontal.png); background-size: cover; background-position: center; height: 100vh; } 
  #cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; } 
  .big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; } 
  .cashcard_big_card_p { line-height: 1rem; } 
@@ -332,6 +332,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
 /* Tablet   (sm) */
 @media(min-width:768px) and (max-width: 991px){
+	/*SECTION 1*/
+	.scrolled {padding-bottom: 15px}
 	/*SECTION 2 */
 	.section_2 {max-height: 100%}
 	.arena_text {width: 300px;padding-left: 50px;padding-top: 220px; margin-top: 75px;}
@@ -357,6 +359,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
 /* Laptop   (md) */
 @media(min-width:992px) and (max-width: 1199px){
+	
 	/*SECTION 2 */
 	.arena_text { width: 400px; padding-top: 50px}
 	.arena_text p {line-height: 1.5rem}
