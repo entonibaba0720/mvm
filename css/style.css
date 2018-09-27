@@ -61,7 +61,7 @@
 * { box-sizing: border-box; } 
 body { position: relative; } 
 html, body { min-height: 100vh; margin: 0; padding: 0; } 
-.mvm { font-family: 'Avenir-Black'; font-size: 50px; color: var(--black); line-height: 1.7rem;  } 
+.mvm { font-family: 'Avenir-Black'; font-size: 50px; color: var(--gray); line-height: 1.7rem;  } 
 .container-fluid { margin: 0; padding: 0; overflow: hidden; } 
 b { font-weight: 900; } 
 .bg_orange {background-color: var(--orange);height: 640px;position: relative; height: 100%}
@@ -101,15 +101,16 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .responsive_menu { z-index: 10000; width: 100vw; height: 100vh; color: #fff; position: relative; }
 .responsive_menu span { position: absolute; top: 25px; right: 25px; font-size: 2.5em; }
 .responsive_menu ul { list-style-type: none; padding-left: 0; width: 100%; }
-.responsive_menu ul li { font-size: 2.1em; opacity: 0; }
-.responsive_menu ul li a { font-family: var(--Nunito), sans-serif; color: #fff; font-weight: 200; }
+.responsive_menu ul li { font-size: 2.1rem; opacity: 0; padding-bottom: 2rem }
+.responsive_menu ul li a { font-family: var(--Linotte), sans-serif; color: #fff; font-weight: 200; text-decoration: none;}
+.responsive_menu ul li a:hover {color: var(--gray)}
 .vertical_align { display: flex; align-items: center; }
 .glyphicon-remove:hover { cursor: pointer; }
 
 
 /* SCROLL */
-.scrolled { margin-top: 0; background-color: rgba(0, 0, 0, 0.7); } 
-.smaller { height: 50px; margin-left: 50px; margin-right: 20px;}
+.scrolled { margin-top: 0; background-color: rgba(0, 0, 0, 0.7); padding-top: 5px} 
+.smaller { height: 50px; margin-left: 50px; margin-right: 20px; }
 
 
 /* XS */
@@ -146,7 +147,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 @media screen and (min-width: 995px) and (max-width: 1200px){
  .scrolled { padding-bottom: 25px;}
- .nav ul li { padding: 15px; } 
+ .nav ul li { padding: 15px 15px 0 15px; } 
  }
 
 
@@ -178,7 +179,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
 #cashcard_big_card { font-family: Avenir-Roman; display:flex; justify-content: center; flex-direction: column; height: 960px} 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
-#cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; max-width: 80%; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
+#cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
 .cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
 .cashcard_mvm.mvm { margin-bottom: 2rem; font-size: 3.5rem}
  @keyframes slideinCard {
@@ -194,13 +195,17 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 /* SECTION 4 */
 
 #alkalmazas { font-family: var(--Titillium); display: flex; } 
-
-#download_header { display: inline-block; margin-top: 2rem; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif;  font-weight: 800; font-size: 3.5rem; padding-bottom: 1.5rem; color: var(--black); } 
-.step_body { font-family: var(--Avenir_Light);display: flex; flex-wrap: wrap; flex-direction: row;  margin-left: 1rem; line-height: 1.4rem; } 
-.number { width: 60px; height: 60px; font-size: 2.3rem; background-color: var(--orange); border-radius: 50%; padding: 10px 20px; color: var(--white); display: block; float: left;} 
-.step_header { font-size: 1.8rem; font-weight: bold; color: var(--orange); display: flex; margin-bottom: 1rem;line-height: 2rem} 
-.phone { height: 100vh; } 
 #mobilapp { width: 80%; overflow: hidden;  margin-top: 10%; margin-left: 10%; animation: slidein 1s ease-in; } 
+#download_header { display: inline-block; margin-top: 2rem; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif;  font-weight: 800; font-size: 3.5rem; padding-bottom: 1.5rem; color: var(--gray) } 
+.step_body { font-family: var(--Avenir_Light);display: flex; flex-wrap: wrap; flex-direction: row;  margin-left: 1rem; line-height: 1.4rem; padding: 0 } 
+.number { width: 60px; height: 60px; font-size: 2.3rem; background-color: var(--orange); border-radius: 50%; padding: 10px 20px; color: var(--white); display: block; float: left;} 
+.step_header { font-size: 1.8rem; font-family: Avenir-Black;  font-weight: bold; color: var(--orange); display: flex; margin-bottom: 1rem;line-height: 2rem} 
+.phone { height: 100vh; } 
+.phone_p { font-family: var(--Avenir_Light); line-height: 1.5rem; margin-bottom: 2rem;} 
+.appstore { margin-right: 20px; } 
+.app_buttons { padding: 2rem 0 4rem; display: flex; flex-direction: row; justify-content: left;} 
+.height {height: 250px; margin-top: 2.5rem}
+.mobile {height: 100%;}
 @keyframes slidein {
 	from {
 	  margin-left: 100%;
@@ -211,35 +216,6 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 	 
 	}
   }
-.phone_p { font-family: var(--Avenir_Light); line-height: 1.5rem; margin-bottom: 2rem;} 
-.appstore { margin-right: 20px; } 
-.app_buttons { padding: 2rem 0 4rem; display: flex; flex-direction: row; justify-content: left;} 
-.height {height: 250px; margin-top: 2.5rem}
-.mobile {height: 100%;}
-
-/* XS */
-
-@media screen and (max-width: 768px){
- #mobilapp { display: none; } 
- .download { width: 100%; margin: 0; } 
- #download_header { padding: 10px; font-size: 1.8rem; } 
- .step_header {font-size: 1.5rem}
- .step_1, .step_2, .step_3, .step_4 { width: 75%; margin-left: 2rem; } 
- .step_body {margin-left: 20px}
- .appstore, .googleplay { justify-content: center; width: 80%;margin-top: 50px} 
- .height {height: 180px; }
- }
-
-
-/* SM */
-
-@media screen and (max-width: 994px){
- #cashcard_big_card { font-size: .8rem; top: -10%; } 
- .download { width: 100%; margin: 0; margin-top: 2rem; } 
- .phone { display: none; } 
- .app_buttons {  display: flex; flex-direction: row; justify-content: center;} 
- }
-
 
 /* FOOTER */
 
@@ -256,7 +232,6 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 .social ul li { margin: 0 5px; } 
 .social li a { color: var(--white);} 
 .copy_social { display: flex; flex-wrap: wrap; flex-direction: row; align-content: space-between; margin-top: 100px; } 
-
 .footer_container { margin-bottom: 2rem; } 
 
 
@@ -293,6 +268,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
 	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
 	.cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0; font-size: 2rem;width: 300px;} 
+
 		/*FOOTER*/
 		footer { height: 100%; } 
 		.footer_1 p { display: none; } 
@@ -314,10 +290,10 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text p { font-size: 1rem }
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {font-size: 2rem;line-height: 2rem;}
-	.arena h2 {padding-left: 20px}
+	.arena h2, .kiosk h2 {padding-left: 20px}
 	.arena { padding: 20px; }
-	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
-	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px}
+	.arena p, .kiosk p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
 
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
@@ -325,7 +301,18 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px } 
 	.cashcard_big_card_p { line-height: 1.5rem; padding: 0 30px; font-size: 1rem }
 	.cashcard_mvm.mvm { font-size: 2rem;margin-top: 2rem; padding-left: 15px}
-	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; }  
+	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; } 
+	
+	/* SECTION 4*/
+	#mobilapp { display: none; } 
+ .download { width: 100%; margin: 0; } 
+ #download_header { padding: 10px; font-size: 1.8rem; } 
+ .step_header {font-size: 1.5rem}
+ .step_1, .step_2, .step_3, .step_4 { width: 75%; margin-left: 2rem; } 
+ .step_body {margin-left: 5px}
+ .appstore, .googleplay { justify-content: center; width: 80%;margin-top: 50px} 
+ .height {height: 180px; }
+ .number_box { margin-right: 10px}
  
 	/*FOOTER*/
 	footer { height: 100%; } 
@@ -335,12 +322,14 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
  footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
  .footer_logo {margin-left: 20px}
  .footer_2, .footer_3 { width: 80%; } 
+ .footer ul li a {cursor: pointer;}
 }
 
 /* Tablet   (sm) */
 @media(min-width:768px) and (max-width: 991px){
 	/*SECTION 1*/
 	.scrolled {padding-bottom: 15px}
+	.smaller {margin-left: 0}
 	/*SECTION 2 */
 	.section_2 {max-height: 100%}
 	.arena_text {width: 300px;padding-left: 50px;padding-top: 220px; margin-top: 75px;}
@@ -364,6 +353,16 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	#cashcard_big_card { height: 700px } 
 	.cashcard_big_card_p { line-height: 1.5rem } 
 	.cashcard_mvm.mvm { font-size: 2.3rem;margin-top: 2rem}
+
+	/* SECTION 4 */
+	#cashcard_big_card { font-size: .8rem; top: -10%; } 
+	#download_header {font-size: 2.3rem}
+	.step_header {font-size: 1.5rem}
+ .download { width: 100%; margin: 0; margin-top: 2rem; } 
+ .phone { display: none; } 
+ .phone_p {margin-top: 2rem}
+ .height { height: 200px;}
+ .app_buttons {  display: flex; flex-direction: row; justify-content: center;} 
 
 	/*FOOTER*/
 	footer { height: 100%; } 
