@@ -177,7 +177,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .section_3 {height: 980px; background-color: #f2f2f2; position: relative; }
 .big_card {background-image: url(../images/big_card.jpg); background-size: cover; background-repeat: no-repeat; background-position-x: 40%;  animation: slideinCard 1s; } 
 .big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
-#cashcard_big_card { font-family: Avenir-Roman; display:flex; justify-content: center; flex-direction: column; height: 960px} 
+#cashcard_big_card { font-family: Avenir-Roman; font-weight: 400; font-size: 1rem; display:flex; justify-content: center; flex-direction: column; height: 960px} 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
 #cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
 .cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
@@ -194,9 +194,9 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 /* SECTION 4 */
 
-#alkalmazas { font-family: var(--Titillium); display: flex; } 
+#alkalmazas { font-family: var(--Titillium); display: flex; padding-left: 15px } 
 #mobilapp { width: 80%; overflow: hidden;  margin-top: 10%; margin-left: 10%; animation: slidein 1s ease-in; } 
-#download_header { display: inline-block; margin-top: 2rem; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif;  font-weight: 800; font-size: 3.5rem; padding-bottom: 1.5rem; color: var(--gray) } 
+#download_header { display: inline-block; margin-top: 2rem; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif;  font-weight: 800; font-size: 3.5rem; padding-bottom: 1.5rem; padding-top: 2rem; color: var(--gray) } 
 .step_body { font-family: var(--Avenir_Light);display: flex; flex-wrap: wrap; flex-direction: row;  margin-left: 1rem; line-height: 1.4rem; padding: 0 } 
 .number { width: 60px; height: 60px; font-size: 2.3rem; background-color: var(--orange); border-radius: 50%; padding: 10px 20px; color: var(--white); display: block; float: left;} 
 .step_header { font-size: 1.8rem; font-family: Avenir-Black;  font-weight: bold; color: var(--orange); display: flex; margin-bottom: 1rem;line-height: 2rem} 
