@@ -275,6 +275,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 .step_body {margin-left: 10px}
 .max-height {padding-left: 0}
 .appstore, .googleplay { justify-content: center; width: 100%;margin-top: 50px} 
+.appstore {margin-right: 0}
 		/*FOOTER*/
 		footer { height: 100%; } 
 		.footer_1 p { display: none; } 
@@ -296,17 +297,17 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text p { font-size: 1rem }
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {font-size: 2rem;line-height: 2rem;}
-	.arena h2, .kiosk h2 {padding-left: 20px}
-	.arena { padding: 20px; }
-	.kiosk { padding: 20px; }
-	.arena p, .kiosk p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.arena h2  {padding-left: 20px}
+	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.kiosk p {font-size: 14px;line-height: 1.2rem; }
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
+	.new {font-size: 14px;line-height: 1.2rem;padding: 20px;}
 
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px; padding-left: 10px;}
 	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px } 
-	.cashcard_big_card_p { line-height: 1.5rem; padding: 0 30px; font-size: 1rem; margin: 0 }
+	.cashcard_big_card_p { line-height: 1.5rem; padding: 20px 30px; font-size: 1rem; margin: 0 }
 	.cashcard_mvm.mvm { font-size: 2rem;margin-top: 2rem; padding-left: 15px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; } 
 	
@@ -317,7 +318,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
  .step_header {font-size: 1.5rem}
  .step_1, .step_2, .step_3, .step_4 { width: 75%; margin-left: 2rem; } 
  .step_body {margin-left: 5px}
- .appstore, .googleplay { justify-content: center; width: 80%;margin-top: 50px} 
+ .app_buttons {justify-content: center}
+ .appstore, .googleplay { margin-top: 50px; } 
+ .appstore { margin-right: 10px; }
  .height {height: 180px; }
  .number_box { margin-right: 10px}
  
