@@ -262,7 +262,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
  	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
  	.big_card_logo_img {height: 100px; }
 	.section_3 h1 { margin-bottom: 1rem; font-size: 1.6rem}
-	.big_card_logo_img {height: 70px; left: 30px}
+	.big_card_logo_img {height: 70px; left: 10px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center;  } 
 	#cashcard_big_card {  top: 8%; width: 90%; height: 700px } 
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
@@ -270,9 +270,11 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0; font-size: 2rem;width: 300px;} 
 /* SECTION 4*/
 .height {padding-left: 0}
-#download_header {font-size: 1.5rem; padding-left: 0}
-.step_body {margin-left: 0}
+#download_header {font-size: 1.5rem; padding-left: 10px}
+.step_header {font-size: 1.5rem}
+.step_body {margin-left: 10px}
 .max-height {padding-left: 0}
+.appstore, .googleplay { justify-content: center; width: 100%;margin-top: 50px} 
 		/*FOOTER*/
 		footer { height: 100%; } 
 		.footer_1 p { display: none; } 
