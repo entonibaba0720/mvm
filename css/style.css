@@ -155,7 +155,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 .arena, .kiosk { padding: 25px; height: 640px; }
 .mvm { font-size: 3.6rem; line-height: 4rem; max-width: 500px}
-.arena p, .kiosk p {font-size: 14px; font-family: 'Montserrat'; font-weight: 400; line-height: 20px; padding-bottom: 2rem; }
+.arena p, .kiosk p {font-size: 1rem; font-family: 'Montserrat'; font-weight: 400; line-height: 20px; padding-bottom: 2rem; }
 .arena_banner, 
 .kiosk_banner { width: 640px; padding-left: 0;} 
 .arena_text, 
