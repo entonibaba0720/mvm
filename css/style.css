@@ -274,8 +274,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 .step_header {font-size: 1.5rem}
 .step_body {margin-left: 10px}
 .max-height {padding-left: 0}
-.appstore, .googleplay { justify-content: center; width: 100%;margin-top: 50px} 
-.appstore {margin-right: 0}
+.appstore, .googleplay { justify-content:center; width: 90%;margin-top: 50px} 
+.appstore {margin-right: 0;}
 		/*FOOTER*/
 		footer { height: 100%; } 
 		.footer_1 p { display: none; } 
@@ -301,11 +301,11 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
 	.kiosk p {font-size: 14px;line-height: 1.2rem; }
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
-	.new {font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.new {font-size: 16px;line-height: 1.2rem;padding: 20px;}
 
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
-	.big_card_logo_img {height: 100px; padding-left: 10px;}
+	.big_card_logo_img {height: 100px; padding-bottom: 1rem}
 	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px } 
 	.cashcard_big_card_p { line-height: 1.5rem; padding: 20px 30px; font-size: 1rem; margin: 0 }
 	.cashcard_mvm.mvm { font-size: 2rem;margin-top: 2rem; padding-left: 15px}
@@ -320,7 +320,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
  .step_body {margin-left: 5px}
  .app_buttons {justify-content: center}
  .appstore, .googleplay { margin-top: 50px; } 
- .appstore { margin-right: 10px; }
+ .appstore { margin-right: 10px; justify-content: space-between}
  .height {height: 180px; }
  .number_box { margin-right: 10px}
  
