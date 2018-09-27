@@ -99,7 +99,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .responsive-menu { display: none; }
 .responsive_menu.active { position: fixed; display: flex !important; }
 .responsive_menu { z-index: 10000; width: 100vw; height: 100vh; color: #fff; position: relative; }
-.responsive_menu span { position: absolute; top: 25px; right: 25px; font-size: 2.5em; }
+.responsive_menu span { position: absolute; top: 25px; right: 25px; font-size: 2.5rem; }
 .responsive_menu ul { list-style-type: none; padding-left: 0; width: 100%; }
 .responsive_menu ul li { font-size: 2.1rem; opacity: 0; padding-bottom: 2rem }
 .responsive_menu ul li a { font-family: var(--Linotte), sans-serif; color: #fff; font-weight: 200; text-decoration: none;}
@@ -268,7 +268,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
 	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
 	.cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0; font-size: 2rem;width: 300px;} 
-
+/* SECTION 4*/
+#download_header {font-size: 1.5rem}
 		/*FOOTER*/
 		footer { height: 100%; } 
 		.footer_1 p { display: none; } 
