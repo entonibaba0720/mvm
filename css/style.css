@@ -58,6 +58,7 @@
 
 
 /* GENERAL */
+
 * { box-sizing: border-box; } 
 body { position: relative; } 
 html, body { min-height: 100vh; margin: 0; padding: 0; } 
@@ -96,6 +97,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 
 /* RESPONSIVE MENU */
+
 .responsive-menu { display: none; }
 .responsive_menu.active { position: fixed; display: flex !important; }
 .responsive_menu { z-index: 10000; width: 100vw; height: 100vh; color: #fff; position: relative; }
@@ -109,47 +111,9 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 
 
 /* SCROLL */
+
 .scrolled { margin-top: 0; background-color: rgba(0, 0, 0, 0.7); padding-top: 5px} 
 .smaller { height: 50px; margin-left: 50px; margin-right: 20px; }
-
-
-/* XS */
-
-@media screen and (max-width: 767px){
- .hero_text {padding-left: 30px}
- .scrolled { padding-bottom: 50px;}
- .smaller { margin-left: 0; margin-right: 0; }
- .glyphicon-menu-hamburger::before {position: absolute; margin-top: 2rem;}
- .glyphicon-menu-hamburger { font-size: 2em; color: #fff; float: right; margin-right: 3rem; }
- .underline { display: none; } 
- .where { font-size: 1rem; letter-spacing: 0; border-bottom: 1px solid white; margin-left: 15px } 
- .button { display: none; } 
- .oval_button { display: none; } 
- }
-
-
-/* SM */
-
-@media screen and (max-width: 994px){
- .navbar-nav { margin: 0; left: 12%; } 
- nav li a { padding-right: 0; margin: 5px; } 
- nav ul li {padding: 20px 5px;  } 
- nav ul li a, 
- .nav ul li span { font-size: .8rem; padding: 5px; } 
- .login { width: 70px; } 
- #header_logo { height: 70px; } 
- .where, 
- .underline { font-size: 1rem; letter-spacing: 0; } 
- }
-
-
-/* MD */
-
-@media screen and (min-width: 995px) and (max-width: 1200px){
- .scrolled { padding-bottom: 25px;}
- .nav ul li { padding: 15px 15px 0 15px; } 
- }
-
 
 /* SECTION 2 */
 
@@ -170,7 +134,6 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .button_kiosk { margin-top: 2rem; margin-left: 1.5rem; } 
 .center-block {display: inline;}
 .orange {height: 100%;}
-
 
 /* SECTION 3 */
 
@@ -213,7 +176,6 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
   
 	to {
 	  margin-left: 5%;
-	 
 	}
   }
 
@@ -235,17 +197,13 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 .footer_container { margin-bottom: 2rem; } 
 
 
-
-
-
-
-
-  
 /***************************** MEDIA QUERIES *******************************/
 
 
  /* Extra small */
+
  @media (max-width: 400px) {
+
 	/* SECTION 1*/
 	.hero_text {font-size:28px; letter-spacing:1.5px; line-height: 35px;padding-top: 250px }
 
@@ -258,39 +216,62 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
 	.arena_text p, .kiosk_text p { font-size: 1rem; max-width: 250px; line-height: 1.2rem; }
 	.kiosk_text {position: absolute;top: 0;margin-top: 20px;padding-top: 0; padding-left: 20px; font-size: 1.5rem;width: 270px;}
- /*SECTION 3*/
+
+	 /*SECTION 3*/
+	 
  	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
  	.big_card_logo_img {height: 100px; }
 	.section_3 h1 { margin-bottom: 1rem; font-size: 1.6rem}
 	.big_card_logo_img {height: 70px; left: 10px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center;  } 
 	#cashcard_big_card {  top: 8%; width: 90%; height: 700px; font-size: 14px } 
-#cashcard_big_card ul li { font-size: 14px} 
+	#cashcard_big_card ul li { font-size: 14px} 
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
 	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
 	.cashcard_mvm.mvm { margin-top: 2rem; padding-left: 0; font-size: 2rem;width: 300px;} 
-/* SECTION 4*/
-.height {padding-left: 0}
-#download_header {font-size: 1.5rem; padding-left: 10px}
-.step_header {font-size: 1.5rem}
-.step_body {margin-left: 10px}
-.max-height {padding-left: 0}
-.appstore, .googleplay { justify-content:center; width: 90%;margin-top: 50px} 
-.appstore {margin-right: 0;}
-		/*FOOTER*/
-		footer { height: 100%; } 
-		.footer_1 p { display: none; } 
-		.footer_1 p { display: none; } 
-		.footer_2, .footer_3, .footer_4  { justify-content: left; margin-left: 10px} 
-		footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
-		.footer_logo {margin-left: 20px}
-		.footer_2, .footer_3 { width: 80%; } 
+
+	/* SECTION 4*/
+
+	.height {padding-left: 0}
+	#download_header {font-size: 1.5rem; padding-left: 10px}
+	.step_header {font-size: 1.5rem}
+	.step_body {margin-left: 10px}
+	.max-height {padding-left: 0}
+	.appstore, .googleplay { justify-content:center; width: 90%;margin-top: 50px} 
+	.appstore {margin-right: 0;}
+
+	/*FOOTER*/
+	
+	footer { height: 100%; } 
+	.footer_1 p { display: none; } 
+	.footer_1 p { display: none; } 
+	.footer_2, .footer_3, .footer_4  { justify-content: left; margin-left: 10px} 
+	footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
+	.footer_logo {margin-left: 20px}
+	.footer_2, .footer_3 { width: 80%; } 
 }
 
 
 /* Mobile   (xs) */
+
+/* SECTION 1 */
+
+@media screen and (max-width: 767px){
+	.hero_text {padding-left: 30px}
+	.scrolled { padding-bottom: 50px;}
+	.smaller { margin-left: 0; margin-right: 0; }
+	.glyphicon-menu-hamburger::before {position: absolute; margin-top: 2rem;}
+	.glyphicon-menu-hamburger { font-size: 2em; color: #fff; float: right; margin-right: 3rem; }
+	.underline { display: none; } 
+	.where { font-size: 1rem; letter-spacing: 0; border-bottom: 1px solid white; margin-left: 15px } 
+	.button { display: none; } 
+	.oval_button { display: none; } 
+	}
+   
 @media(min-width:401px) and (max-width:767px){
+	
 	/*SECTION 2 */
+
 	.arena_banner, .kiosk_banner, .orange, .kiosk, .arena {width: 100%} 
 	.arena_text {position: absolute; top: 0; padding-left: 50px; }
 	.arena_text h1 { font-size: 3rem; margin-bottom: .5rem; }
@@ -304,6 +285,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	
 
 	/*SECTION 3*/
+
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px; padding-bottom: 1rem}
 	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px; font-size: 14px } 
@@ -313,35 +295,56 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; } 
 	
 	/* SECTION 4*/
+
 	#mobilapp { display: none; } 
- .download { width: 100%; margin: 0; } 
- #download_header { padding: 10px; font-size: 1.8rem; } 
- .step_header {font-size: 1.5rem}
- .step_1, .step_2, .step_3, .step_4 { width: 75%; margin-left: 2rem; } 
- .step_body {margin-left: 5px}
- .app_buttons {justify-content: center}
- .appstore, .googleplay { margin-top: 50px; } 
- .appstore { margin-right: 10px; justify-content: space-between}
- .height {height: 180px; }
- .number_box { margin-right: 10px}
+ 	.download { width: 100%; margin: 0; } 
+ 	#download_header { padding: 10px; font-size: 1.8rem; } 
+ 	.step_header {font-size: 1.5rem}
+ 	.step_1, .step_2, .step_3, .step_4 { width: 75%; margin-left: 2rem; } 
+ 	.step_body {margin-left: 5px}
+ 	.app_buttons {justify-content: center}
+ 	.appstore, .googleplay { margin-top: 50px; } 
+ 	.appstore { margin-right: 10px; justify-content: space-between}
+ 	.height {height: 180px; }
+ 	.number_box { margin-right: 10px}
  
 	/*FOOTER*/
+
 	footer { height: 100%; } 
- .footer_1 p { display: none; } 
- .footer_1 p { display: none; } 
- .footer_2, .footer_3, .footer_4  { justify-content: left; margin-left: 10px} 
- footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
- .footer_logo {margin-left: 20px}
- .footer_2, .footer_3 { width: 80%; } 
- .footer ul li a {cursor: pointer;}
+ 	.footer_1 p { display: none; } 
+ 	.footer_1 p { display: none; } 
+ 	.footer_2, .footer_3, .footer_4  { justify-content: left; margin-left: 10px} 
+ 	footer ul li { font-size: 1.2rem; line-height: 40px; font-weight: 300; } 
+ 	.footer_logo {margin-left: 20px}
+ 	.footer_2, .footer_3 { width: 80%; } 
+ 	.footer ul li a {cursor: pointer;}
 }
 
 /* Tablet   (sm) */
+
+/* SECTION 1*/
+
+@media screen and (max-width: 994px){
+	.navbar-nav { margin: 0; left: 12%; } 
+	nav li a { padding-right: 0; margin: 5px; } 
+	nav ul li {padding: 20px 5px;  } 
+	nav ul li a, 
+	.nav ul li span { font-size: .8rem; padding: 5px; } 
+	.login { width: 70px; } 
+	#header_logo { height: 70px; } 
+	.where, 
+	.underline { font-size: 1rem; letter-spacing: 0; } 
+	}
+   
 @media(min-width:768px) and (max-width: 991px){
+
 	/*SECTION 1*/
+
 	.scrolled {padding-bottom: 15px}
 	.smaller {margin-left: 0}
+
 	/*SECTION 2 */
+
 	.section_2 {max-height: 100%}
 	.arena_text {width: 300px;padding-left: 50px;padding-top: 220px; margin-top: 75px;}
 	.kiosk_text {padding-left: 30px}
@@ -359,6 +362,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_banner { padding-top:180px}
 
 	/*SECTION 3*/
+
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px;}
 	#cashcard_big_card { height: 700px } 
@@ -366,23 +370,34 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.cashcard_mvm.mvm { font-size: 2.3rem;margin-top: 2rem}
 
 	/* SECTION 4 */
+
 	#cashcard_big_card { font-size: .8rem; top: -10%; } 
 	#download_header {font-size: 2.3rem}
 	.step_header {font-size: 1.5rem}
- .download { width: 100%; margin: 0; margin-top: 2rem; } 
- .phone { display: none; } 
- .phone_p {margin-top: 2rem}
- .height { height: 200px;}
- .app_buttons {  display: flex; flex-direction: row; justify-content: center;} 
+ 	.download { width: 100%; margin: 0; margin-top: 2rem; } 
+ 	.phone { display: none; } 
+ 	.phone_p {margin-top: 2rem}
+ 	.height { height: 200px;}
+ 	.app_buttons {  display: flex; flex-direction: row; justify-content: center;} 
 
 	/*FOOTER*/
+
 	footer { height: 100%; } 
 }
 
 /* Laptop   (md) */
+
+/* SECTION 1*/
+
+@media screen and (min-width: 995px) and (max-width: 1200px){
+	.scrolled { padding-bottom: 25px;}
+	.nav ul li { padding: 15px 15px 0 15px; } 
+	}
+   
 @media(min-width:992px) and (max-width: 1199px){
 	
 	/*SECTION 2 */
+
 	.arena_text { width: 400px; padding-top: 50px}
 	.arena_text p {line-height: 1.5rem}
 	.arena_banner {padding-top: 32px;}
@@ -390,6 +405,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.oval_button {margin-top: 20px}
 
 	/*SECTION 3*/
+
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.cashcard_mvm.mvm { font-size: 3.5rem;line-height: 3.5rem}
 }
@@ -397,7 +413,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
  
 @media (min-width: 1919px) {
+
 	/*SECTION 2 */
+
 	.arena_text {max-width: 700px;}
 	.arena_text h1 { font-size: 4.5rem; margin-bottom: 2rem; }
 	.arena_text h2 { font-size: 3rem; margin-bottom: 1rem; line-height: 50px; }
@@ -405,7 +423,4 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.orange{position: relative;}
 	.kiosk_text {margin-top: 25px;position: absolute;padding-left: 80px;max-width: 450px;}
 	.kiosk_text p {width: 450px;line-height: 2.4rem; }
-	 
-	
-    
 }
