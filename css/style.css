@@ -279,7 +279,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {font-size: 2rem;line-height: 2rem;}
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
-	.new, .new_h2 {padding-left: 0; padding-right: 0}
+
 	
 
 	/*SECTION 3*/
