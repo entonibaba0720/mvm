@@ -210,14 +210,14 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	 /*SECTION 2 */
 	.kiosk h2, .arena h2 {font-size: 2rem; line-height: 2rem; padding-top: 30px; }
 	.arena h2 {padding-left: 15px}
-	.arena, .kiosk {padding: 0 15px; height: auto;}
+	.arena, .kiosk {height: auto;}
 	.arena_banner {height: 100%; padding-right: 0;}
 	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
 	.arena_text p, .kiosk_text p { font-size: 1rem; max-width: 250px; line-height: 1.2rem; }
-	.arena p{padding: 0 15px;margin-bottom: 2rem}
 	.kiosk_text {position: absolute;top: 0;margin-top: 20px;padding-top: 0; padding-left: 20px; font-size: 1.5rem;width: 270px;}
+	.arena {padding: 50px 10px}
 
 	 /*SECTION 3*/
 	 
@@ -284,6 +284,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem;}
 	.kiosk p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem; }
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
+	.kiosk {padding: 0 10px}
+	.new {padding: 0 15px}
 	
 
 	/*SECTION 3*/
