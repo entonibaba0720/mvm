@@ -142,7 +142,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
 #cashcard_big_card { font-family: 'Montserrat'; font-weight: 400; font-size: 1rem; display:flex; justify-content: center; flex-direction: column; height: 960px} 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
-#cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
+#cashcard_big_card ul li::after { content: ""; display: block; width: 19rem; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
 .cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
 .cashcard_mvm.mvm { margin-bottom: 2rem; font-size: 3.5rem}
  @keyframes slideinCard {
