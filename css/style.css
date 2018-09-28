@@ -140,7 +140,7 @@ nav ul li a:hover { text-decoration: none; color: var(--orange); background-colo
 .section_3 {height: 980px; background-color: #f2f2f2; position: relative; }
 .big_card {background-image: url(../images/big_card.jpg); background-size: cover; background-repeat: no-repeat; background-position-x: 40%;  animation: slideinCard 1s; } 
 .big_card_logo_img { position: absolute; left: 50px; top: 50px; height: 150px; width: auto;} 
-#cashcard_big_card { font-family: Avenir-Roman; font-weight: 400; font-size: 1rem; display:flex; justify-content: center; flex-direction: column; height: 960px} 
+#cashcard_big_card { font-family: 'Montserrat'; font-weight: 400; font-size: 1rem; display:flex; justify-content: center; flex-direction: column; height: 960px} 
 #cashcard_big_card ul li { margin-bottom: 0.5rem; } 
 #cashcard_big_card ul li::after { content: ""; display: block; width: 17.5rem; border-bottom: 1px solid #000; margin: 0.5rem 0 auto; } 
 .cashcard_big_card_p { margin-top: 1.5rem; line-height: 1.5rem; padding:0 30px; max-width: 1050px} 
@@ -224,7 +224,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.section_3 h1 { margin-bottom: 1rem; font-size: 1.6rem}
 	.big_card_logo_img {height: 70px; left: 10px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center;  } 
-	#cashcard_big_card {  top: 8%; width: 90%; height: 700px; font-size: 14px } 
+	#cashcard_big_card {  top: 8%; width: 90%;  font-size: 14px } 
 	#cashcard_big_card ul li { font-size: 14px} 
 	.big_card ul { display: flex; flex-direction: row; flex-wrap: wrap; padding-left: 0} 
 	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 1rem } 
