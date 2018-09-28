@@ -209,7 +209,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
 	 /*SECTION 2 */
 	.kiosk h2, .arena h2 {font-size: 2rem;line-height: 2rem; padding-top: 30px}
-	.arena, .kiosk {padding: 0 15px; height: auto;}
+	.arena, .kiosk {padding: 0 15px; height: 100%;}
 	.arena_banner {height: 100%; padding-right: 0;}
 	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
