@@ -208,13 +208,15 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.hero_text {font-size:28px; letter-spacing:1.5px; line-height: 35px;padding-top: 250px }
 
 	 /*SECTION 2 */
-	.kiosk h2, .arena h2 {font-size: 2rem;line-height: 2rem; padding-top: 30px}
+	.kiosk h2, .arena h2 {font-size: 2rem; line-height: 2rem; padding-top: 30px; }
+	.arena h2 {padding-left: 15px}
 	.arena, .kiosk {padding: 0 15px; height: auto;}
 	.arena_banner {height: 100%; padding-right: 0;}
 	.arena_text { top: 0; padding-left: 25px; padding-top: 40px; }
 	.arena_text h1 { font-size: 2.5rem; margin-bottom: .5rem; }
 	.arena_text h2 { font-size: 1.5rem; margin-bottom: .5rem; line-height: 2rem; max-width: 250px}
 	.arena_text p, .kiosk_text p { font-size: 1rem; max-width: 250px; line-height: 1.2rem; }
+	.arena p{padding: 0 15px;margin-bottom: 2rem}
 	.kiosk_text {position: absolute;top: 0;margin-top: 20px;padding-top: 0; padding-left: 20px; font-size: 1.5rem;width: 270px;}
 
 	 /*SECTION 3*/
@@ -279,7 +281,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {font-size: 2rem;line-height: 2rem;}
 	.arena h2  {padding-left: 20px}
-	.arena p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.arena p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem;}
 	.kiosk p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem; }
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
 	
@@ -357,8 +359,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.arena_text p {padding-top: 0}
 	.center-block {display: flex; justify-content: center;}
 	.mvm {margin-top: 0;padding-top: 0; font-size: 2.5rem; line-height: 2.5rem}
-	.arena { padding-top: 20px; max-height: 100%}
-	.arena p {font-size: 14px; line-height: 1.2rem}
+	.arena p{padding: 0 15px}
+	.arena, .kiosk { padding-top: 20px; max-height: 100%}
 	.arena_banner { padding-top:180px}
 
 	/*SECTION 3*/
