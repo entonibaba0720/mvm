@@ -298,10 +298,10 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	.center-block {display: flex; justify-content: center; padding-top: 30px}
 	.mvm {font-size: 2rem;line-height: 2rem;}
 	.arena h2  {padding-left: 20px}
-	.arena p {font-size: 14px;line-height: 1.2rem;padding: 20px;}
-	.kiosk p {font-size: 14px;line-height: 1.2rem; }
+	.arena p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem;padding: 20px;}
+	.kiosk p {font-family: 'Montserrat';font-size: 14px;line-height: 1.2rem; }
 	.kiosk_text {max-width: 420px; padding-top: 30px; padding-left: 40px;margin-top: 10px}
-	.new {font-size: 16px;line-height: 1.2rem;padding: 20px;}
+	
 
 	/*SECTION 3*/
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
