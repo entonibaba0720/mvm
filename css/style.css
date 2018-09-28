@@ -286,9 +286,9 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 
 	.section_3 h1 { margin-bottom: 1rem; font-size: 2.5rem}
 	.big_card_logo_img {height: 100px; padding-bottom: 1rem}
-	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px; font-size: 14px } 
-	#cashcard big_card ul li {font-size: 14px; line-height: 1.3rem}
-	.cashcard_big_card_p { line-height: 1.3rem; padding: 0 15px; font-size: 14px} 
+	#cashcard_big_card { left: 2%; top: 8%; margin-left: 1rem; width: 90%; height: 700px; font-size: 14px; line-height: 1.3rem } 
+	#cashcard big_card ul li {font-size: 14px; }
+	.cashcard_big_card_p { font-size: 14px} 
 	.cashcard_mvm.mvm { font-size: 2rem;margin-top: 2rem; padding-left: 15px}
 	.big_card { background-image: url(../images/1card.png); background-size: cover; background-position: center; } 
 	
