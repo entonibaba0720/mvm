@@ -364,6 +364,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: c
 	#cashcard_big_card { height: 700px } 
 	.cashcard_big_card_p { line-height: 1.5rem } 
 	.cashcard_mvm.mvm { font-size: 2.3rem;margin-top: 2rem}
+	#cashcard_big_card ul li::after {width: 17.5rem}
 
 	/* SECTION 4 */
 
